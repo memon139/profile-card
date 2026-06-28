@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <style>
+      *{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: Arial,Helvetica,Sans-Serif;
+}
+
+body{
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+
+background: linear-gradient(135deg,#6a11cb,#2575fc);
+}
+
+.card{
+width: 350px;
+background: white;
+padding: 35px;
+border-radius: 20px;
+text-align: center;
+box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+transition: .4s;
+}
+
+.card:hover{
+transform: translateY(-10px);
+}
+
+.card img{
+width: 150px;
+height: 150px;
+border-radius: 50%;
+object-fit: cover;
+border:5px solid #2575fc;
+}
+
+.card h2{
+margin-top: 20px;
+font-size: 28px;
+}
+
+.card h4{
+color: #2575fc;
+margin:10px 0;
+}
+
+.card p{
+color: #555;
+line-height: 25px;
+margin: 20px 0;
+}
+
+.social{
+margin: 20px 0;
+}
+
+.social a{
+text-decoration: none;
+margin: 0 10px;
+color: #2575fc;
+font-size:25px;
+transition: .3s;
+}
+
+.social a:hover{
+color: #6a11cb;
+transform: scale(1.2);
+}
+
+button{
+padding: 12px 35px;
+border: none;
+border-radius: 50px;
+background: #2575fc;
+color: white;
+font-size: 18px;
+cursor: pointer;
+transition: .4s;
+}
+
+button:hover{
+background: #6a11cb;
+transform:scale(1.05);
+}
+    </style>
+</head>
+<body>
+  <div class="card">
+    <img src="photo.png" alt="Profile">
+    <h2>Memon Irshad</h2>
+    <h4>Fronted developer</h4>
+    <p> I love building beautiful and responsive websites
+        using HTML & CSS.</p>
+    <div class="social">
+      <a href="https://www.instagram.com/_____irshad7?igsh=MWp1eHNqdHZocWJtcA=="><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="https://www.linkedin.com/in/sg-gaming-72020a386?utm_source=share_via&utm_content=profile&utm_medium=member_android"><i class="fab fa-linkedin"></i></a>
+      <a href="#"><i class="fab fa-youtube"></i></a>
+    </div>
+    <button>Follow Me</button>
+  </div>
+</body>
+</html>
